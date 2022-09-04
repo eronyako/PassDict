@@ -3,11 +3,11 @@
 本项目为使用 python3 编写的 密码字典整理去重工具。
 
 ## 使用
-本项目可以使用直接使用 PassDict.py 文件（需要安装 Python3 并添加到环境变量），或使用 Releases 的 exe 文件。
+本项目可以使用直接使用 .py 文件（需要安装 Python3 并添加到环境变量），或使用 Releases 的 exe 文件。
 
 所需文件如下：
 
-- 程序主体：PassDict.py / PassDict.exe
+- 程序主体：PassDict.py / PassDict.exe / PassDictGUI.py / PassDictGui.exe
 - 密码字典
 
 ### 密码字典要求
@@ -26,6 +26,12 @@
 python PassDict.py
 ```
 
+或使用 GUI：
+
+```shell
+python PassDictGUI.py
+```
+
 #### 打包 exe 文件
 
 可使用 pyinstaller 包，用如下命令将会在 `./dist/` 目录下创建 windows 可执行程序：
@@ -34,11 +40,17 @@ python PassDict.py
 pyinstaller -F --icon=icon.ico PassDict.py
 ```
 
+```shell
+pyinstaller -w -F --icon=icon.ico PassDictGUI.py
+```
+
 ### 使用封装版
 
 拖动密码字典文件到  PassDict.exe
 
 直接运行的情况，将会读取当前文件夹下的 passwords.txt
+
+或使用 GUI 程序：PassDictGUI.exe
 
 ## 输出
 
