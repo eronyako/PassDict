@@ -9,7 +9,6 @@
 import os.path
 import sys
 
-
 try:
     file_name = sys.argv[1]
 except IndexError:
@@ -35,9 +34,6 @@ for v in pw_list:
 
 pw_out = sorted(pw_out)
 
-with open('passwords_out.txt','w',encoding='UTF-8') as f:
+with open('passwords_out.txt', 'w', encoding='UTF-8') as f:
     for v in pw_out:
         f.write(v)
-
-
-
