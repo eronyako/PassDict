@@ -16,6 +16,10 @@
 
 ### 使用源码
 
+GUI 版需要以下依赖：
+
+- ttkbootstrap
+
 拖动密码字典文件到 PassDict.py
 
 直接运行的情况，将会读取当前文件夹下的 passwords.txt
