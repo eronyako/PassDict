@@ -14,7 +14,7 @@ import os
 
 
 # 定义转换函数
-def pw_convert(pw_list):
+def pw_convert(pw_list: list[str]) -> list[str]:
     pw_out = set()
     for v in pw_list:
         if v == '\n':
@@ -134,4 +134,5 @@ def main():
 
 
 # 运行
-main()
+if __name__ == '__main__':
+    main()

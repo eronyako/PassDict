@@ -52,10 +52,14 @@ pyinstaller -w -F --icon=icon.ico PassDictGUI.py
 
 拖动密码字典文件到  PassDict.exe
 
-直接运行的情况，将会读取当前文件夹下的 passwords.txt
+直接运行的情况，将会读取当前文件夹下的 `passwords.txt`
 
 或使用 GUI 程序：PassDictGUI.exe
 
 ## 输出
 
-若正常运行后将会在当前文件夹生成去重整理后的 passwords_out.txt 文件。
+正常运行后将会在当前文件夹生成去重整理后的 `passwords_out.txt` 文件。
+
+## 使用许可
+
+[MIT](LICENSE) © Eronyako
